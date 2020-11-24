@@ -1,3 +1,6 @@
+const util = require("./utils/generateMarkdown")
+util.generateMarkdown("hello")
+
 // array of questions for user
 const questions = [
 
