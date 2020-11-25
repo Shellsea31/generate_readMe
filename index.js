@@ -1,20 +1,17 @@
-// const util = require("./utils/generateMarkdown");
+const fs = require("fs");
+const inquirer = require("inquirer");
+const util = require("./utils/generateMarkdown");
 // util.generateMarkdown(titlefromdata)
 
-const inquirer = require("inquirer");
-
 // array of questions for user
-const questions = [
-  "What is the title of your project?",
-  "Write a description for your project",
-];
+const questions = [];
 
 // function to write README file
-// function writeToFile(fileName, data) {}
+
 
 // function to initialize program
-const init = () => {
-  return inquirer
+function init() {
+  inquirer
     .prompt([
       {
         type: "input",
@@ -24,13 +21,57 @@ const init = () => {
       {
         type: "input",
         name: "description",
-        message: "Write a description for your project",
+        message: "Write a description for your project.",
+      },
+      {
+        type: "input",
+        name: "install",
+        message: "Please provide installation instructions.",
+      },
+      {
+        type: "input",
+        name: "usage",
+        message: "Give an example of what your project can do.",
+      },
+      {
+        type: "input",
+        name: "contribute",
+        message: "How can users contribute to your project?",
+      },
+      {
+        type: "input",
+        name: "username",
+        message: "What is your GitHub username?",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "What is your email?",
+      },
+      {
+        type: "list",
+        name: "license",
+        message: "Choose a License for your Project",
+        choices: [
+          {
+            name: "GitHub license",
+            value:
+              "[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) This project is licensed under the terms of the GitHub license",
+          },
+          {
+            name: "MIT License",
+            value:
+              "[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) This project is licensed under the terms of the MIT license.",
+          },
+        ],
       },
     ])
-    .then((answers) => {
-      console.log(answers);
+    .then((data) => {
+      console.log(data);
+
+      // writeToFile("README.md", data);
     });
-};
+}
 
 // function call to initialize program
 init();
