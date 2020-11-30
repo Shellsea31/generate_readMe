@@ -4,7 +4,7 @@ module.exports = {
   generateMarkdown: function generateMarkdown(answer) {
     return `# ${answer.title}
   
-    ## Description
+## Description
       ${answer.description}
       ## Table of Contents
       1. Installation(#installation)
