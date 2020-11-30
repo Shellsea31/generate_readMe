@@ -1,7 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("./utils/generateMarkdown");
-// util.generateMarkdown(titlefromdata)
+
 
 // array of questions for user
 const questions = [];
@@ -71,10 +71,10 @@ function init() {
         ],
       },
     ])
-    .then((data) => {
-      console.log(data);
-
-      // writeToFile("README.md", data);
+    .then((answer) => {
+      console.log(answer.title)
+      util.generateMarkdown();
+      writeToFile("README.md", answer.title);
     });
 }
 
