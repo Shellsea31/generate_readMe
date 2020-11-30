@@ -72,9 +72,9 @@ function init() {
       },
     ])
     .then((answer) => {
-      console.log(answer.title)
-      util.generateMarkdown();
-      writeToFile("README.md", answer.title);
+      // console.log(answer)
+      let data = util.generateMarkdown(answer);
+      writeToFile("README.md", data);
     });
 }
 
