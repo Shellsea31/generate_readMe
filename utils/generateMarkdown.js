@@ -16,7 +16,6 @@ ${answer.description}
   3. [Contributing](#contributing)
   4. [Tests](#tests)
   5. [Questions](#questions)
-  6. [License](#licence)
   
 ## Installation <a name="installation"></a>
 ${answer.install}
@@ -32,7 +31,7 @@ ${answer.contribute}
 Try the program out yourself!
 Type the following in the terminal to initialize:
 
-
+${test}
   
 ## Questions <a name="questions"></a>
 If you have additional questions send me an [email](${answer.email}).
