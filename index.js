@@ -1,5 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+// const { exit } = require("process");
 const util = require("./utils/generateMarkdown");
 
 
@@ -32,6 +33,11 @@ function init() {
         type: "input",
         name: "install",
         message: "Please provide installation instructions.",
+      },
+      {
+        type: "input",
+        name: "test",
+        message: "What code should the user type to initialize your program?",
       },
       {
         type: "input",

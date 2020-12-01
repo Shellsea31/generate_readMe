@@ -27,7 +27,12 @@ ${answer.usage}
 ## Contributing
 ${answer.contribute}
 
-## Tests
+## Test it
+
+Try the program out yourself!
+Type the following in the terminal to initialize:
+
+
   
 ## Questions
 If you have additional questions send me an [email](${answer.email}).
