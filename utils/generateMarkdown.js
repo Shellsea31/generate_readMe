@@ -21,20 +21,20 @@ ${answer.description}
 ## Installation <a name="installation"></a>
 ${answer.install}
 
-## Usage
+## Usage <a name="usage"></a>
 ${answer.usage}
 
-## Contributing
+## Contributing <a name="contributing"></a>
 ${answer.contribute}
 
-## Test it
+## Test it <a name="tests"></a>
 
 Try the program out yourself!
 Type the following in the terminal to initialize:
 
 
   
-## Questions
+## Questions <a name="questions"></a>
 If you have additional questions send me an [email](${answer.email}).
 You can also visit my GitHub account for more projects by clicking [here](https://github.com/${answer.username}).
   
