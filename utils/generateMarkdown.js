@@ -29,9 +29,9 @@ ${answer.contribute}
 ## Test it <a name="tests"></a>
 
 Try the program out yourself!
-Type the following in the terminal to initialize:
+The application will be invoked by using the following command:
 
-${test}
+${answer.test}
   
 ## Questions <a name="questions"></a>
 If you have additional questions send me an [email](${answer.email}).
