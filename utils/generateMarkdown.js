@@ -11,14 +11,14 @@ ${answer.license}
 ${answer.description}
 
 ## Table of Contents
-  1. Installation(#installation)
-  2. Usage(#usage)
-  3. Contributing(#contributing)
-  4. Tests(#tests)
-  5. Questions(#questions)
-  6. License(#licence)
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  3. [Contributing](#contributing)
+  4. [Tests](#tests)
+  5. [Questions](#questions)
+  6. [License](#licence)
   
-## Installation
+## Installation <a name="installation"></a>
 ${answer.install}
 
 ## Usage
