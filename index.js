@@ -1,5 +1,8 @@
+// to write file
 const fs = require("fs");
+// to use inquirer
 const inquirer = require("inquirer");
+// to bring in function from modules
 const generateMarkdown = require("./utils/generateMarkdown");
 
 
@@ -74,7 +77,6 @@ function init() {
       },
     ])
     .then((answer) => {
-      // console.log(answer)
       let data = generateMarkdown(answer);
       writeToFile("README.md", data);
     });

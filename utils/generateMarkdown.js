@@ -1,5 +1,4 @@
 // function to generate markdown for README
-
 function generateMarkdown(answer) {
     return `# ${answer.title}
   
@@ -41,4 +40,5 @@ You can also visit my GitHub account for more projects by clicking [${answer.use
   `;
   };
 
+// make function available in other files
 module.exports = generateMarkdown;
