@@ -34,8 +34,11 @@ ${answer.test}
 \`\`\`
   
 ## Questions <a name="questions"></a>
-If you have additional questions send me an [${answer.email}](${answer.email}).
-You can also visit my GitHub account for more projects by clicking [${answer.username}](https://github.com/${answer.username}).
+If you have additional questions send me an email!
+You can also visit my GitHub account for more projects.
+
+Email: [${answer.email}](${answer.email})
+GitHub: [${answer.username}](https://github.com/${answer.username})
   
   `;
   };
