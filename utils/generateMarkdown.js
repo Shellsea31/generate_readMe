@@ -1,7 +1,6 @@
-module.exports = {
-  // function to generate markdown for README
+// function to generate markdown for README
 
-  generateMarkdown: function generateMarkdown(answer) {
+function generateMarkdown(answer) {
     return `# ${answer.title}
   
 ## License
@@ -31,12 +30,15 @@ ${answer.contribute}
 Try the program out yourself!
 The application will be invoked by using the following command:
 
+\`\`\`
 ${answer.test}
+\`\`\`
   
 ## Questions <a name="questions"></a>
-If you have additional questions send me an [email](${answer.email}).
-You can also visit my GitHub account for more projects by clicking [here](https://github.com/${answer.username}).
+If you have additional questions send me an [${answer.email}](${answer.email}).
+You can also visit my GitHub account for more projects by clicking [${answer.username}](https://github.com/${answer.username}).
   
   `;
-  },
-};
+  };
+
+module.exports = generateMarkdown;

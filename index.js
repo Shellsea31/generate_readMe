@@ -1,11 +1,10 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-// const { exit } = require("process");
-const util = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 
 // array of questions for user
-const questions = [];
+// const questions = [];
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -79,7 +78,7 @@ function init() {
     ])
     .then((answer) => {
       // console.log(answer)
-      let data = util.generateMarkdown(answer);
+      let data = generateMarkdown(answer);
       writeToFile("README.md", data);
     });
 }
